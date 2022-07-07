@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "norse";
+    src: url("/fonts/Norse-Bold.otf") format("opentype");
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-column{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space{
+    justify-content: center;
+}
+
+/*Side-bar image*/
+
+aside{
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+}
+
+.background {
+    background: aliceblue url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-bar {
+    background-color: rgba(0,0,0,0.4);
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 20vh;
+}
+
+.logo {
+    margin-right: 50px;
+    height: 100%;
+}
+
+.aside_bottom{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color:white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#logo_text {
+    font-family: "norse";
+    font-size: 5rem;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+a:focus, a:hover {
+    text-decoration: underline;
+}
+
+div.userForm > section p:last-child {
+    color:green;
+    margin-top: 5vh;
+}
+
+/*Form*/
+
+section{
+    max-width: 800px;
+    min-width: 400px;
+}
+
+.userForm{
+    padding: 0px 10px;
+    height: 100vh;
+    width: 60vw;
+}
+
+section > p {
+    font-size: 1.5rem;
+}
+
+form{
+    margin-top:5vh;
+    height: 400px;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: -5px 5px 3px gray;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+}
+
+form > ul > li > label {
+    font-size: 1.2rem;
+}
+
+input {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 5px;
+    width : 250px;
+}
+
+button {
+    margin-top: 5vh;
+    height: 3rem;
+    width: 250px;
+    background-color: #596D48;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+button:focus{border-color: rgba(0, 0, 0, 0);}
+
+a.green, a.green:visited{
+    text-decoration: none;
+    color: #596D48;
+}
+
+a.green:focus, a.green:hover {
+    text-decoration: underline;
+}
+
+#join {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
